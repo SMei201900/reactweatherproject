@@ -1,11 +1,12 @@
 import React from "react";
+import "./ButtonStyling.css";
 
 export default function Search() {
 	let form = (
-		<form>
-			<input type="search" placeholder="Type a city" />
-			<input type="submit" className="btn btn-primary blue" value="Search" />
-			<button className="green"> Current Location </button>
+		<form onSubmit="">
+			<input type="search" placeholder="Type a city" onChange="" />
+			<input type="submit" className="btn btn-primary" value="Search" />
+			<button className="btn btn-success"> Current Location </button>
 		</form>
 	);
 
