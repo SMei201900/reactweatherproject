@@ -1,5 +1,31 @@
 import React from "react";
 
 export default function Search() {
-	return <h2>Location</h2>;
+	let form = (
+		<form>
+			<input type="search" placeholder="Type a city" />
+			<input type="submit" className="btn btn-primary blue" value="Search" />
+			<button className="green"> Current Location </button>
+		</form>
+	);
+
+	return (
+		<div className="Search">
+			<div>{form}</div>
+			<h2> the location or city name </h2>
+			<div className="row">
+				<div className="col-4">Time and Date</div>
+				<div className="col-4">
+					<div>Description </div>
+					<div class="clearfix"> Image </div>
+					<span> Temperature </span>
+					<a href="#">°C</a> | <a href="#">°F</a>
+				</div>
+				<div className="col-4">
+					<li>Humidity</li>
+					<li>Wind Speed</li>
+				</div>
+			</div>
+		</div>
+	);
 }

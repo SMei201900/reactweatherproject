@@ -9,3 +9,17 @@ body {
 	padding: 50px;
 	border-radius: 20px;
 }
+
+h1 {
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	color: #fcae1e;
+}
+
+.col-4 {
+	color: #f984ef;
+	font-size: 20px;
+}
