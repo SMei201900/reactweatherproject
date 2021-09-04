@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./App.css";
 
 export default function Search() {
 	let [city, setCity] = useState("");
@@ -41,11 +40,11 @@ export default function Search() {
 		return (
 			<div className="Search">
 				<div>{form}</div>
-				<h2> {city} </h2>
+				<h2 className="text-capitalize"> {city} </h2>
 				<div className="row">
 					<div className="col-4">Time and Date</div>
 					<div className="col-4">
-						<div> {weatherData.description} </div>
+						<div className="text-capitalize"> {weatherData.description} </div>
 						<div class="clearfix">
 							{" "}
 							<img src={weatherData.icon} alt={weatherData.description} />{" "}
