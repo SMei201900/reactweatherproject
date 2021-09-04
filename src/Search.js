@@ -19,7 +19,8 @@ export default function Search() {
 					<div>Description </div>
 					<div class="clearfix"> Image </div>
 					<span> Temperature </span>
-					<a href="#">°C</a> | <a href="#">°F</a>
+					<a href="https://www.google.com/">°C</a> |{" "}
+					<a href="https://www.google.com/">°F</a>
 				</div>
 				<div className="col-4">
 					<li>Humidity</li>
