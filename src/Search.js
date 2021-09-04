@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
 
 export default function Search() {
 	let [city, setCity] = useState("");
@@ -47,7 +48,7 @@ export default function Search() {
 						<div> {weatherData.description} </div>
 						<div class="clearfix">
 							{" "}
-							<img src={weatherData.icon} />{" "}
+							<img src={weatherData.icon} alt={weatherData.description} />{" "}
 						</div>
 						<span> {weatherData.temperature} </span>
 						<a href="https://www.google.com/">°C</a> |{" "}
