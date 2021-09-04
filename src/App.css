@@ -1,0 +1,11 @@
+body {
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gradient {
+	margin: 50px;
+	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+	padding: 50px;
+	border-radius: 20px;
+}
