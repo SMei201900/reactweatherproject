@@ -1,11 +1,12 @@
 import React from "react";
+import "./CreditStyle.css";
 
 export default function Credits() {
 	return (
 		<div>
 			<span className="credit">
 				<a
-					className="code-source"
+					className="codeSource"
 					href="https://github.com/SMei201900/reactweatherproject"
 					target="_blank"
 					rel="noreferrer"
@@ -23,6 +24,7 @@ export default function Credits() {
 				</a>{" "}
 				and{" "}
 				<a
+					className="hostSite"
 					href="https://adoring-snyder-f3b61d.netlify.app/"
 					target="_blank"
 					rel="noreferrer"

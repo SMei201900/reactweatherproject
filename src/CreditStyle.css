@@ -1,0 +1,28 @@
+.credit {
+	font-size: 15px;
+}
+
+.profile {
+	text-decoration: none;
+}
+
+.profile:hover {
+	text-decoration: underline;
+	transition: all 200ms ease-in-out;
+}
+.codeSource {
+	text-decoration: none;
+}
+.codeSource:hover {
+	text-decoration: underline;
+	transition: all 200ms ease-in-out;
+}
+
+.hostSite {
+	text-decoration: none;
+}
+
+.hostSite:hover {
+	text-decoration: underline;
+	transition: all 200ms ease-in-out;
+}
