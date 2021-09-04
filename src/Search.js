@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import DayofWeek from "./DayofWeek";
 
 export default function Search() {
 	let [city, setCity] = useState("");
@@ -13,6 +14,7 @@ export default function Search() {
 			icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
 			humidity: response.data.main.humidity,
 			windSpeed: response.data.wind.speed,
+			date: new Date(response.data.dt * 1000),
 		});
 	}
 
@@ -42,7 +44,9 @@ export default function Search() {
 				<div>{form}</div>
 				<h2 className="text-capitalize"> {city} </h2>
 				<div className="row">
-					<div className="col-4">Time and Date</div>
+					<div className="col-4">
+						<DayofWeek date={weatherData.date} />{" "}
+					</div>
 					<div className="col-4">
 						<div className="text-capitalize"> {weatherData.description} </div>
 						<div class="clearfix">
