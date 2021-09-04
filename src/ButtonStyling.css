@@ -3,7 +3,6 @@
 	padding: 10px;
 	border: none;
 	border-radius: 10px;
-	transition: all 200ms ease-in-out;
 }
 
 .btn-success {
@@ -11,13 +10,4 @@
 	padding: 10px;
 	border: none;
 	border-radius: 10px;
-	transition: all 200ms ease-in-out;
-}
-
-.btn-primary:hover {
-	opacity: 0.8;
-}
-
-.btn-success:hover {
-	opacity: 0.8;
 }
