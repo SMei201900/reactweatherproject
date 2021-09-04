@@ -10,9 +10,11 @@
 	text-decoration: underline;
 	transition: all 200ms ease-in-out;
 }
+
 .codeSource {
 	text-decoration: none;
 }
+
 .codeSource:hover {
 	text-decoration: underline;
 	transition: all 200ms ease-in-out;
