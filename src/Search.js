@@ -1,5 +1,4 @@
 import React from "react";
-import "./ButtonStyling.css";
 
 export default function Search() {
 	let form = (
