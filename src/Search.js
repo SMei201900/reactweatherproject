@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import DayofWeek from "./DayofWeek";
+import TheWeather from "./TheWeather";
 
 export default function Search() {
 	let [city, setCity] = useState("");
@@ -54,9 +55,7 @@ export default function Search() {
 							{" "}
 							<img src={weatherData.icon} alt={weatherData.description} />{" "}
 						</div>
-						<span> {weatherData.temperature} </span>
-						<a href="https://www.google.com/">°C</a> |{" "}
-						<a href="https://www.google.com/">°F</a>
+						<TheWeather celsius={weatherData.temperature} />
 					</div>
 					<div className="col-4">
 						<li>Humidity: {weatherData.humidity}%</li>
