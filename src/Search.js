@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import DayofWeek from "./DayofWeek";
 import TheWeather from "./TheWeather";
+import "./ButtonStyling.css";
 
 export default function Search() {
 	let [city, setCity] = useState("");

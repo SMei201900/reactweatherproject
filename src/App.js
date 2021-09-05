@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import "./ButtonStyling.css";
 import Credits from "./Credits";
 import Search from "./Search.js";
 
