@@ -9,6 +9,7 @@ export default function Search() {
 	function weather(response) {
 		setWeatherData({
 			ready: true,
+			city: response.data.name,
 			temperature: Math.round(response.data.main.temp),
 			description: response.data.weather[0].description,
 			icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -42,7 +43,7 @@ export default function Search() {
 		return (
 			<div className="Search">
 				<div>{form}</div>
-				<h2 className="text-capitalize"> {city} </h2>
+				<h2 className="text-capitalize"> {weatherData.city} </h2>
 				<div className="row">
 					<div className="col-4">
 						<DayofWeek date={weatherData.date} />{" "}
